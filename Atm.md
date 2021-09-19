@@ -28,26 +28,26 @@ Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial 
 
 # Program Code
 #include <stdio.h>
-
-int main(void)
-{
-	int w;
-	float bal;
-	scanf("%d",&w);
-	scanf("%f",&bal);
-	if(w%5!=0 )
-	{
-	    printf("%.2f",bal);
-	}
-	else if(bal<w+0.5)
-	{
-	    printf("%.2f",bal);
-	}
-	else
-	{
-	    printf("%.2f",bal-w-0.5);
-	}
-	return 0;
+<br>
+int main(void)<br>
+{<br>
+	int w;<br>
+	float bal;<br>
+	scanf("%d",&w);<br>
+	scanf("%f",&bal);<br>
+	if(w%5!=0 )<br>
+	{<br>
+	    printf("%.2f",bal);<br>
+	}<br>
+	else if(bal<w+0.5)<br>
+	{<br>
+	    printf("%.2f",bal);<br>
+	}<br>
+	else<br>
+	{<br>
+	    printf("%.2f",bal-w-0.5);<br>
+	}<br>
+	return 0;<br>
 }
 
 
