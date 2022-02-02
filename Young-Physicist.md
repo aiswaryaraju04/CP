@@ -24,3 +24,28 @@ Print the word "YES" if the body is in equilibrium, or the word "NO" if it is no
 2 -1 -3
 
 Yes
+
+SOLUTION
+import java.util.Scanner;
+
+public class physicst {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int x=0, y=0, z=0;
+        while(n-->=1)
+        {
+            x= x+sc.nextInt();
+            y= y+sc.nextInt();
+            z= z+sc.nextInt();
+        }
+        if(x + y + z == 0)
+        {
+            System.out.println("YES");
+        }else
+        {
+            System.out.println("NO");
+        }
+    }
+}
