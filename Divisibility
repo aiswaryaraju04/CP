@@ -1,0 +1,45 @@
+Given an array arr[] of size N consisting of non-zero positive integers. 
+The task is to determine whether the number that is formed by selecting the last digits of all the numbers is 
+divisible by 10 or not. If the number is divisible by 10, then print Yes otherwise print No.
+
+Sample Input
+
+5
+85 25 65 21 84
+
+Sample Output
+
+No
+
+Solution
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int temp,res;
+    int N = 0;
+    cin>>N;
+    
+    long data[N];
+    for(auto i=0; i<N; i++)
+        cin>>data[i];
+    for(int i=0;i<N;i++)
+    {
+        temp=data[i]%10;
+        res=temp;
+        res=res*10+temp;
+    }
+    if(res/10==0)
+    {
+        cout<<"Yes";
+    }
+    else
+    {
+        cout<<"No";
+    }
+    
+    
+    return 0;
+}
